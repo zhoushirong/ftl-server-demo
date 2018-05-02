@@ -13,10 +13,37 @@
 
 目的一是为了更好的理解ftl-server，另一个是为了整一个脚手架，为了更方便的使用ftl-server。
 
-
+### 依赖项
 [ftl-server](https://github.com/szmtcjm/ftl-server)
 
+### 分别支持三种ftl数据MOCK
+```shell
+-- mock/ftl-config/index.js # mock数据存放配置文件，简化配置项后面列出
+-- mock/ftlData/ # mock数据存放，ftl直出数据
+-- mock/ajaxData/ # mock数据存放，ajax接口数据
+-- mock/proxyData/ # mock数据存放，代理接口数据
+```
+
+##### ftl-config/index.js数据配置文件举例
+```javascript
+let config  = {
+  port: 2000, // 服务端口号
+  publicDir: './', // 静态文件目录
+  ftlFileDir: './src/page', // 配置freemarker模板目录
+  watchFileDirs: ['./mock/'], // 需要监听文件变化的文件夹目录，可以是多个目录
+  ftlDataFileDir: './mock/ftlData', // ftl文件的数据目录
+  ajaxDataFileDir: './mock/ajaxData', // ajax数据文件目录
+  proxyDataFileDir: './mock/proxyData', // 代理文件目录
+  globalData: {                         // 所有的ftl共享的数据，因为这种文件数据不会很多，所有不单独用一个文件夹存放了
+    globalParam: 'i am global data'
+  }
+}
+```
 
 ### dev-server
+```shell
+yarn install || npm install 
+npm run ftl
+```
 http://localhost:2000/
 
