@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/proxy21",
+    "target": "https://www.baidu.com"
+  },
+  {
+    "path": "/proxy22",
+    "target": "https://8.163.com"
+  }
+]

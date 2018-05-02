@@ -1,0 +1,6 @@
+[
+  {
+    "path": "/proxy1",
+    "target": "https://epay.163.com"
+  }
+]

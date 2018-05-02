@@ -1,0 +1,15 @@
+{
+  "name": "ftl-server-demo",
+  "version": "1.0.0",
+  "description": "ftl-server-local",
+  "scripts": {
+    "ftl": "./node_modules/.bin/ftl-server -c ./mock/ftl-config/index.js"
+  },
+  "main": "''",
+  "repository": "https://github.com/zhoushirong/ftl-server-demo.git",
+  "author": "zhoushirong <1091263031@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ftl-server": "^1.0.1"
+  }
+}
